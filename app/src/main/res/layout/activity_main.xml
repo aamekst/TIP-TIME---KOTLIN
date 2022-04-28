@@ -39,18 +39,21 @@
             android:id="@+id/option_twenty_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:text="@string/amazing_20" />
 
         <RadioButton
             android:id="@+id/option_eighteen_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:text="@string/good_18" />
 
         <RadioButton
             android:id="@+id/option_fifteen_percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:text="@string/ok_15" />
 
     </RadioGroup>
@@ -63,7 +66,8 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
         android:checked="true"
-        android:text="Arrendondar gojeta?"
+        android:minHeight="48dp"
+        android:text="Arrendondar gorjeta?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +80,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:background="#5FFDD8"
+        android:background="?attr/colorPrimary"
         android:shadowColor="#131313"
         android:text="@string/calculate"
         android:textColor="#000000"

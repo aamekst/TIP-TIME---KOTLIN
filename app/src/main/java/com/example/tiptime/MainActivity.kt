@@ -15,11 +15,8 @@ class MainActivity : AppCompatActivity()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.calculateButton.setOnClickListener{ calculateTip() }
-
-
     }
 
-    @SuppressLint("StringFormatInvalid")
     fun calculateTip() {
         val stringInTextField = binding.costOfService.text.toString()
         val cost = stringInTextField.toDouble()
@@ -35,7 +32,7 @@ class MainActivity : AppCompatActivity()
             tip = kotlin.math.ceil(tip)
         }
         val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
-        binding.tipResult.text = getString(R.string.tip_amount, formattedTip)
+        binding.tipResult.text = formattedTip
 
 
     }
